@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ProjB_Ke Wang</title>
+</head>
+
+<body  onload="main()" onresize="winResize()">
+  <canvas id="webgl" width="1200" height="600">
+    Please use a browser that supports "canvas"
+  </canvas>
+  <br>W: forward  S: backward  A: toward left  D: toward right  V: change the camera to a point fixed on a moving object 
+  <br>F: fly or stop  O: turn left when flying  P: turn right when flying  &uarr;: pull up  &darr;: dive  L: bacl to horizontal fliht when flying
+  <br>&larr;: turn your head to left  &rarr;: turn your head to right 
+  <p>
+    <button type="button" onclick="leftup()"> left&uarr;</button>
+    <button type="button" onclick="leftdown()">left&darr;</button>
+    <button type="button" onclick="rightup()">right&uarr;</button>
+    <button type="button" onclick="rightdown()">right&darr;</button>
+    <button type="button" onclick="bottomup()">bottom&uarr;</button>
+    <button type="button" onclick="bottomdown()">bottom&darr;</button> 
+    <button type="button" onclick="topup()">top&uarr;</button>
+    <button type="button" onclick="topdown()">top&darr;</button>
+    <button type="button" onclick="nearup()">near&uarr;</button>
+    <button type="button" onclick="neardown()">near&darr;</button>
+    <button type="button" onclick="farup()">far&uarr;</button>
+    <button type="button" onclick="fardown()">far&darr;</button>
+    <button type="button" onclick="change()">frumstum/perspective</button>
+  </p>
+  <script src="lib/webgl-utils.js"></script>
+  <script src="lib/webgl-debug.js"></script>
+  <script src="lib/cuon-utils.js"></script>
+  <script src="lib/cuon-matrix-mod.js"></script>
+  <script src="lib/cuon-matrix.js"></script>
+  <script src="lib/cuon-matrix-quat.js"></script>
+  <script src="ProjB_Ke Wang.js"></script>
+</body>
+</html>

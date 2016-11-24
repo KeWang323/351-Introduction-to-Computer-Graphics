@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>ProjC_Ke Wang</title>
+</head>
+
+<body  onload="main()"onresize="winResize()">
+	<canvas id="webgl" width="600" height="600">
+		Please use a browser that supports "canvas"
+	</canvas>
+	<p>
+		<button type="button" onclick="shadering()">Shadering:Phong/Gouraud/Cook-Torrance</button>
+		<a id="shadering">Phong </a>
+		<button type="button" onclick="WorldLight()">WorldLight On/Off</button> 
+		<a id="world">On</a>
+	</p>
+	<p>
+		<button type="button" onclick="lighting()">Lighting:Blinn-Phong/Phong</button>
+		<a id="lighting">Phong </a>
+		<button type="button" onclick="HeadLight()">HeadLight On/Off</button> 
+		<a id="head">On</a>
+	</p>
+	<p>
+		<button type="button" onclick="att()">Attenuation</button> 
+		<a id="atten">None</a>
+	</p>
+	<script src="lib/webgl-utils.js"></script>
+	<script src="lib/webgl-debug.js"></script>
+	<script src="lib/cuon-utils.js"></script>
+	<script src="lib/cuon-matrix-mod.js"></script>
+	<script src="lib/cuon-matrix.js"></script>
+	<script src="lib/cuon-matrix-quat.js"></script>
+	<script src="ProjC_Ke Wang.js"></script>
+	<script src="lib/materials_Ayerdi.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.0.js"></script>
+	<script src="lib/dat-gui.js"></script>
+
+</body>
+</html>
